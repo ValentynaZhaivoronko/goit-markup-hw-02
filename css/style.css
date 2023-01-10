@@ -8,12 +8,19 @@
 
 :root{
 --primary-text-color: #2E2F42;
+--secondary-text-color: #434455;
+--link-active-text-color: #404BBF;
+--button-background: #F4F4FD;
+--footer-text-color: #E7E9FC;
+--button-mein-background: #4D5AE5;
+--button-text: #FFFFFF;
 }
 
 body {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
-background: #E5E5E5;
+font-size: 16px;
+background: #FFFFFF;
 }
 
 /*======== components======== */
@@ -26,11 +33,11 @@ background: #E5E5E5;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--primary-text-color);
 }
 
 .logo-first {
-    color: #4D5AE5;
+    color: var(--button-mein-background);
 }
 
 
@@ -50,20 +57,21 @@ color: var(--primary-text-color)
 .imail,
 .tel-nummer {
         font-size: 16px;
+        font-style: normal;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--secondary-text-color);
 }
 
 .menu-link:active, {
-    color: #404BBF;
+        color: var(--link-active-text-color);
 }
 
 .imail:hover,
 .imail:focus,
 .tel-nummer:hover,
 .tel-nummer:focus {
-    color: #404BBF;
+    color: var(--link-active-text-color);
 }
 
 /*======== /header======== */
@@ -79,13 +87,15 @@ color: var(--primary-text-color)
     align-items: center;
     letter-spacing: 0.04em;
 
-    color: #FFFFFF;
-    background: #4D5AE5;
+    color: var(--button-text);
+    background: var(--button-mein-background);
     cursor: pointer;
+    
 }
 
-.btn:hover {
-    background: #404BBF;
+.btn:hover
+.btn:focus {
+    background: var(--link-active-text-color);
 }
 /*======== /hero======== */
 /*======== about======== */
@@ -101,7 +111,7 @@ color: var(--primary-text-color)
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--secondary-text-color)
 }
 /*======== /about======== */
 
@@ -139,7 +149,7 @@ color: var(--primary-text-color)
         line-height: 1.2;
         text-align: center;
         letter-spacing: 0.02em;
-        color: var(--primary-text-color)
+        color: var(--primary-text-color);
 }
 
 .profession-team {
@@ -147,7 +157,7 @@ color: var(--primary-text-color)
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--secondary-text-color);
 }
 /*======== /our team======== */
 
@@ -157,13 +167,21 @@ color: var(--primary-text-color)
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #E7E9FC;
+        color: var(--footer-text-color);
+}
+
+.logo-second {
+        color: var(--button-background);
+}
+.footer {
+        background: var(--primary-text-color);
 }
 /*======== /footer======== */
 
 /* ========portfolio======== */
 .btn-portfolio {
         cursor: pointer;
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -171,13 +189,13 @@ color: var(--primary-text-color)
         align-items: center;
         text-align: center;
         letter-spacing: 0.04em;
-        color: #4D5AE5;
-        background: #F4F4FD;
+        color: var(--link-active-text-color);
+        background: var(--button-background);
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus{
-    background: #404BBF;
+    background: var(--link-active-text-color);
 }
 /* ========/portfolio======== */
 
@@ -192,13 +210,14 @@ color: var(--primary-text-color)
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        color: #2E2F42;
+        color: var(--primary-text-color)
 }
 
 .text-card-content {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: var(--secondary-text-color);
 }
 /* ========section-team-card======== */
+
